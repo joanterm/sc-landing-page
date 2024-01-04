@@ -8,6 +8,10 @@ import venmo from "../src/imgs/venmo_icon copy.png"
 import lesson from "../src/imgs/lessoncopy.png"
 import tiktok from "../src/imgs/tiktokcopy.png"
 import youtube from "../src/imgs/youtube.png"
+import {Routes, Route, Link} from "react-router-dom"
+import Home from "../src/components/Home"
+import About from "../src/components/About"
+import Socials from "../src/components/Socials"
 
 const Container = styled.div`
   display: flex;
@@ -38,7 +42,6 @@ const ButtonsContainer = styled.div`
     flex-direction: column;
   }
 `
-
 const Button = styled.a`
   display: flex;
   align-items: center;
@@ -62,13 +65,11 @@ const Button = styled.a`
     color: white;
   }
 `
-
 const BlankDiv = styled.div`
   // border: 2px red solid;
   width: 40px;
   height: 40px;
 `
-
 const ButtonImage = styled.img`
   // border: 2px red solid;
   width: 40px;
@@ -78,7 +79,6 @@ const ButtonText = styled.div`
   // /* border: 2px green solid; */
   padding: 10px;
 `
-
 const Footer = styled.footer`
   color: white;
   padding: 15px 0 20px 0;
@@ -97,10 +97,19 @@ margin-bottom: 90px;
     }
   }
 `
-
 function App() {
   return (
     <Container>
+      {/* NAVIGATION BEGINS */}
+      <Routes>
+        <Route exact path="/" element={<Home />}/>
+        <Route exact path="/about" element={<About />}/>
+        <Route exact path="/socials" element={<Socials />}/>
+      </Routes>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/socials">Socials</Link>
+       {/* NAVIGATION ENDS */}
       <AvatarContainer>
         <Avatar src={scdance} alt="Avatar" />
       </AvatarContainer>
