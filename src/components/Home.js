@@ -108,17 +108,35 @@ function Home() {
           </div>
         </div>
         <div className="border-4 border-green-300 h-3/6 w-full flex justify-center">
-          <div className="border-4 border-pink-200 w-10/12 flex flex-col justify-end">
+          <div className="border-4 border-pink-200 w-9/12 flex flex-col justify-end">
             <div className="border-4 border-pink-800">
-              <h1 className="text-white text-7xl font-arizonia">Nelson Maldonado</h1>
-              <p className="text-white text-3xl">LOREM IPSUM</p>
-              <button className="text-white bg-cyan-300">Let's Dance</button>
+              <h1 className="text-white text-7xl font-merriweather pb-4">Nelson Maldonado</h1>
+              <p className="text-white text-3xl font-nunito pb-4">Dancer. Instructor. Lifelong Salsa Passionate.</p>
+              <button className="text-white font-bold bg-red-600 px-8 py-4">Let's Dance</button>
             </div>
           </div>
         </div>
       </div>
-      <div className="border-4 border-pink-600 bg-cyan-300 h-screen">
-        <h1>BLUE</h1>
+      <div className="border-4 border-pink-100 w-full flex justify-center">
+        <div className="border-4 border-green-900 w-9/12">
+          <div className="border-4 border-blue-600">
+            <div className="border-4 border-blue-600 w-9/12 mx-auto text-center pt-10">
+                  <h2 className="text-5xl font-merriweather pb-4">TEXT HERE.</h2>
+                  <p className="text-2xl border-4 border-blue-600 w-10/12 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div className="border-4 border-pink-100 h-dvh flex justify-between items-center">
+            <div style={{ backgroundImage: `url(${heroImage})` }} className="bg-cover bg-center border-4 border-pink-600 mr-4 w-1/2 h-2/3">
+              <h1 className="text-white">CARD</h1>
+            </div>
+            <div style={{ backgroundImage: `url(${heroImage})` }} className="bg-cover bg-center border-4 border-pink-600 mr-4 w-1/2 h-2/3">
+              <h1 className="text-white">CARD</h1>
+            </div>
+            <div style={{ backgroundImage: `url(${heroImage})` }} className="bg-cover bg-center border-4 border-pink-600 w-1/2 h-2/3">
+              <h1 className="text-white">CARD</h1>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="border-4 border-red-600 bg-neutral-900 h-screen">
         <h1 className="text-white">BlACK</h1>
